@@ -1,23 +1,34 @@
 import React, { Component } from "react";
-import styled from "styled-components";
+import {
+    Route,
+    BrowserRouter as Router,
+    NavLink,
+    Routes
+} from "react-router-dom";
 
-const Nav = styled.nav`
-    color: blue;
-`
+import Principal from "./Principal";
+import Orcamento from "./Orcamento";
 
 class Main extends Component {
     render() {
         return (
-            <div>
-                <h1 className="h1__titulo">Criação de Sites</h1>
-                <Nav>
-                    <ul>
-                        <li><a href="/">Principal</a></li>
-                        <li><a href="/orcamento">Orçamento</a></li>
-                    </ul>
-                </Nav>
-                <div className="conteudo"></div>
-            </div>
+            <Router>
+                <div>
+                    <h1 className="h1__titulo">Criação de Sites</h1>
+                    <nav>
+                        <ul>
+                            <li><NavLink to="/">Principal</NavLink></li>
+                            <li><NavLink to="/orcamento">Orçamento</NavLink></li>
+                        </ul>
+                    </nav>
+                    <div className="content">
+                        <Routes>
+                            <Route exact path="/" element={<Principal/>}/>
+                            <Route path="/orcamento" element={<Orcamento/>}/>
+                        </Routes>
+                    </div>
+                </div>
+            </Router>
         )
     }
 }

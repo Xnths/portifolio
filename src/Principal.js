@@ -5,7 +5,8 @@ class Principal extends Component {
         return (
             <div>
                 <h2 className="h2__titulo">Sites para o seu negócio</h2>
-                <p className="p__descricao">Criação de sites profissionais por <storng className="destaque__desenvolvedor">Xnths</storng>, calouro na Universidade de São Paulo.</p>
+                <h3 className="h3__titulo-secundario">Criação de sites impactantes para o <strong className="destaque__desenvolvedor">seu</strong> negócio.</h3>
+                <p className="p__descricao">Perfeito para dar visibilidade às pequenas empresas na internet.</p>
             </div>
         )
     }
