@@ -1,0 +1,80 @@
+.titulo{
+    font-family: "Shrikhand", cursive;
+    font-size: 4rem;
+    padding: 2rem 0 0 0;
+    color: var(--destaque);
+    text-shadow: 1px 2px var(--detalhe-secundario);
+    text-align: center;
+}
+
+.titulo-secundario{
+    font-family: "Shrikhand", cursive;
+    color: var(--fonte-principal);
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 915px) {
+    .titulo-secundario{
+        font-size: 1.5rem;
+    }
+
+}
+
+.principal {
+    background-color: var(--fundo-secundario);
+    background-position: center;
+    background-size: cover;
+    padding: 0 0 1rem 0;
+}
+
+.principal__descricao{
+    color: white;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    padding: 0 0.8rem 1rem 0.8rem;
+}
+
+.desenvolvemos{
+    background-color: var(--fundo-secundario);
+}
+
+.desenvolvemos__img{
+    height: 8rem;
+    filter: invert(100%);
+    margin: 0 auto;
+}
+
+.desenvolvemos__direitos{
+    font-size: 0.7rem;
+    text-align: center;
+    padding: 0.3rem 0 0.7rem 0;
+}
+
+.desenvolvemos__direitos--link {
+    text-decoration: none;
+    color: white;
+}
+
+.desenvolvemos__titulo{
+    color: var(--destaque);
+    margin: 0.9rem 0;
+    text-align: center;
+    font-family: "Shrikhand", sans-serif;
+    font-size: 1.5rem;
+    text-shadow: 1px 2px var(--detalhe-terciario);
+}
+
+.desenvolvemos__titulo-principal{
+    font-size: 2rem;
+    padding: .9rem 0;
+}
+
+.desenvolvemos__container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 1rem auto;
+    background-color: var(--detalhe-secundario);
+}
