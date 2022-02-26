@@ -1,17 +1,15 @@
 :root {
     --destaque: #F9C74F;
     --fundo-principal: #372253;
-    --fundo-secundario: #343434;
     --fundo-terciario: #5E17EB;
+    --fundo-secundario: #343434;
     --detalhe-principal: #5CE1E6;
     --detalhe-secundario: #FF32AF;
     --detalhe-terciario: #EE8DAE;
     --detalhe-quaternario: #FF66C4;
     --fonte-principal: white;
     --fonte-secundaria: #f6ffc1;
-
-    
-
+        
     --logo-tamanho: 4.5rem;
     --cabecalho-espacamento: 1rem;
 }

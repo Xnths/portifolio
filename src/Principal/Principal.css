@@ -15,18 +15,72 @@
     font-size: 2rem;
 }
 
+.desenvolvemos__container{
+    display: flex;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.desenvolvemos__container--card{
+    width: 18vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 1rem auto;
+    background-color: var(--detalhe-secundario);
+}
+
+.about__container--card{
+    display: grid;
+    grid-template-columns: 8rem 30vh;
+    padding: 0.5rem 1rem;
+    margin: 1rem 2rem;
+    background-color: var(--detalhe-secundario);
+    width: 50%;
+}
+
+.about__container--card::before{
+    margin: 1rem 0 1rem 0;
+}
+
+.about__container{
+    display: flex;
+    width: 70vw;
+    margin: 0 auto;
+}
+
 @media screen and (max-width: 915px) {
     .titulo-secundario{
         font-size: 1.5rem;
     }
+    
+    .desenvolvemos__container{
+        display: grid;
+        padding: 0.5rem 0.8rem;
+        grid-template-columns: 50% 50%;
+        width: auto;
+        margin: 0;
+    }
 
+    .desenvolvemos__container--card{
+        width: 93%;
+    }
+
+    .about__container--card{
+        grid-template-columns: 8rem 60vw;
+        margin: 1rem 0;
+    }
+
+    .about__container{
+        display: inline;
+        margin: 0;
+    }
 }
 
 .principal {
-    background-color: var(--fundo-secundario);
+    background-color: var(--fundo-terciario);
     background-position: center;
     background-size: cover;
-    padding: 0 0 1rem 0;
+    padding: 2rem;
 }
 
 .principal__descricao{
@@ -36,14 +90,13 @@
     padding: 0 0.8rem 1rem 0.8rem;
 }
 
-.desenvolvemos{
-    background-color: var(--fundo-secundario);
-}
-
 .desenvolvemos__img{
     height: 8rem;
-    filter: invert(100%);
     margin: 0 auto;
+}
+
+.white__img{
+    filter: invert(100%);
 }
 
 .desenvolvemos__direitos{
@@ -62,19 +115,30 @@
     margin: 0.9rem 0;
     text-align: center;
     font-family: "Shrikhand", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-shadow: 1px 2px var(--detalhe-terciario);
 }
 
 .desenvolvemos__titulo-principal{
     font-size: 2rem;
-    padding: .9rem 0;
+    padding: 1.2rem 0 0.9rem 0;
 }
 
-.desenvolvemos__container{
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto 1rem auto;
-    background-color: var(--detalhe-secundario);
+.about__img{
+    height: 6rem;
+    padding: 0 0 0 0.5rem;
+    margin: auto 0;
+}
+
+.about__nome{
+    font-family: "Shrikhand", cursive;
+    color: var(--fonte-principal);
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem 0;
+    text-shadow: 1px 2px var(--detalhe-secundario);
+}
+
+.about__descricao{
+    color: var(--fonte-principal);
+    font-family: "Roboto", cursive;
 }
